@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrador.systemaautonica.MainLlanta">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:text="Informacion de las Llantas del Vehiculo"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageViewLlantas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/accion0000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Llanta Frontal Izquierda " />
+
+                        <ToggleButton
+                            android:id="@+id/tBt_F_izquierda"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="ToggleButton"
+                            android:textOff="No necesita reemplazo"
+                            android:textOn="NEcesita reemplazo" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Llanta Frontal Derecha " />
+
+                        <ToggleButton
+                            android:id="@+id/tBt_F_derecha"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="ToggleButton"
+                            android:textOff="No necesita reemplazo"
+                            android:textOn="NEcesita reemplazo" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Llanta Tracera Izquierda " />
+
+                        <ToggleButton
+                            android:id="@+id/tBt_T_izquierda"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="ToggleButton"
+                            android:textOff="No necesita reemplazo"
+                            android:textOn="NEcesita reemplazo" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Llanta Tracera Derecha " />
+
+                        <ToggleButton
+                            android:id="@+id/tBt_T_derecha"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="ToggleButton"
+                            android:textOff="No necesita reemplazo"
+                            android:textOn="NEcesita reemplazo" />
+
+                    </LinearLayout>
+
+                    <GridLayout
+                        android:id="@+id/ID_llanta1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Información Llanta Frontal Izquierda" />
+
+                        <EditText
+                            android:id="@+id/TextLlanta1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textMultiLine"
+                            android:lines="8"
+                            android:minLines="4" />
+                    </GridLayout>
+
+                    <GridLayout
+                        android:id="@+id/ID_llanta2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Información Llanta Frontal Derecha" />
+
+                        <EditText
+                            android:id="@+id/TextLlanta2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textMultiLine"
+                            android:lines="8"
+                            android:minLines="4" />
+                    </GridLayout>
+
+                    <GridLayout
+                        android:id="@+id/ID_llanta3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Información Llanta Tracera Izquierda" />
+
+                        <EditText
+                            android:id="@+id/TextLlanta3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textMultiLine"
+                            android:lines="8"
+                            android:minLines="4" />
+                    </GridLayout>
+
+                    <GridLayout
+                        android:id="@+id/ID_llanta4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Información Llanta Tracera Derecha" />
+
+                        <EditText
+                            android:id="@+id/TextLlanta4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textMultiLine"
+                            android:lines="8"
+                            android:minLines="4" />
+                    </GridLayout>
+
+                    <Button
+                        android:id="@+id/btnContinuar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Continuar" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
